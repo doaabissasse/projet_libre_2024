@@ -1,0 +1,41 @@
+/* Styles pour le conteneur principal */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Ajuste la hauteur minimale pour permettre un meilleur défilement */
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styles pour le contenu principal */
+  h1.text-center {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Barre de navigation */
+  .navbar {
+    margin-bottom: 20px;
+  }
+   
+  /* Pour les liens actifs dans la navigation */
+  .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+  
+  /* Pour permettre le défilement à l'intérieur du conteneur de contenu principal */
+  .router-outlet {
+    flex-grow: 1;
+  }
+  
