@@ -1,0 +1,3 @@
+[submodule "angular-front"]
+	path = angular-front
+	url = https://github.com/doaabissasse/projet_libre_2024.git
