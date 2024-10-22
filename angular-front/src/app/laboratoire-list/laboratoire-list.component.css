@@ -1,0 +1,20 @@
+.laboratoire-list {
+    padding: 20px;
+  }
+  
+  .laboratoire-list h2 {
+    color: #2a4963; /* Utilise une couleur de ton thème */
+  }
+  
+  .laboratoire-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .laboratoire-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

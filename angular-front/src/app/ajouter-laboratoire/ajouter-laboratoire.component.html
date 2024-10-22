@@ -1,0 +1,32 @@
+<div class="container mt-3">
+    <h3>Ajouter un nouveau Laboratoire</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input type="text" class="form-control" id="id" [(ngModel)]="laboratoire.id" name="id">
+      </div>
+  
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" class="form-control" id="nom" [(ngModel)]="laboratoire.nom" name="nom">
+      </div>
+  
+      <div class="form-group">
+        <label for="logo">Logo</label>
+        <input type="text" class="form-control" id="logo" [(ngModel)]="laboratoire.logo" name="logo">
+      </div>
+  
+      <div class="form-group">
+        <label for="active">Active</label>
+        <input type="text" class="form-control" id="active" [(ngModel)]="laboratoire.active" name="active">
+      </div>
+  
+      <div class="form-group">
+        <label for="dateActivation">Date d'Activation</label>
+        <input type="text" class="form-control" id="dateActivation" [(ngModel)]="laboratoire.dateActivation" name="dateActivation">
+      </div>
+  
+      <button class="btn btn-success mt-2" type="submit">Ajouter</button>
+    </form>
+  </div>
+  
