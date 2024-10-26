@@ -20,7 +20,7 @@ public class LaboratApplicationTests {
 	void testAjouterLaboratoire() {
 		// Arrange
 
-		Laboratoire laboratoire = new Laboratoire("labo1","Laboratoire A", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScKzDL-UooaUL_TEbEGcgu3yaXV-9AV8e81foeGdxMsPd-ipl_kIdh81TpzwxJVF4BB4s&usqp=CAU", "NRC123456", true, LocalDate.of(2024, 10, 18));
+		Laboratoire laboratoire = new Laboratoire("Laboratoire A", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScKzDL-UooaUL_TEbEGcgu3yaXV-9AV8e81foeGdxMsPd-ipl_kIdh81TpzwxJVF4BB4s&usqp=CAU", "NRC123456", true, LocalDate.of(2024, 10, 18));
 
 		// Act
 		service.save(laboratoire);

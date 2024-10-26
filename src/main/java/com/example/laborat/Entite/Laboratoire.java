@@ -8,7 +8,8 @@ import java.time.LocalDate;
 @Table(name="laboratoire")
 public class Laboratoire {
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
     private String nom;
     private String logo;
@@ -21,8 +22,7 @@ public class Laboratoire {
     public Laboratoire() {
     }
 
-    public Laboratoire(String id, String nom, String logo, String nrc, boolean active, LocalDate dateActivation) {
-        this.id = id;
+    public Laboratoire(String nom, String logo, String nrc, boolean active, LocalDate dateActivation) {
         this.nom = nom;
         this.logo = logo;
         this.nrc = nrc;
@@ -30,11 +30,11 @@ public class Laboratoire {
         this.dateActivation = dateActivation;
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
