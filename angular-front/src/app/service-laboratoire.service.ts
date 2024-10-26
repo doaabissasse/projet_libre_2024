@@ -7,7 +7,7 @@ import { Laboratoire } from './laboratoire'; // Assurez-vous que le chemin est c
   providedIn: 'root' // Assurez-vous que le service est fourni ici
 })
 export class ServiceLaboratoireService {
-  private apiUrl = 'http://localhost:8080/api/laboratoires'; // Remplacez par l'URL de votre API
+  private apiUrl = 'http://localhost:8080/laboratoires'; // Remplacez par l'URL de votre API
 
   constructor(private httpClient: HttpClient) {}
 
