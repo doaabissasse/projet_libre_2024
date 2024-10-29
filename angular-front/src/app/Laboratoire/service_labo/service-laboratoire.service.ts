@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Laboratoire } from './laboratoire'; // Assurez-vous que le chemin est correct
+import { Laboratoire } from '../Entite_labo/laboratoire'; // Assurez-vous que le chemin est correct
 
 @Injectable({
   providedIn: 'root' // Assurez-vous que le service est fourni ici

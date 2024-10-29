@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Laboratoire } from '../laboratoire';
+import { Laboratoire } from '../Entite_labo/laboratoire';
 import { CommonModule } from '@angular/common';
-import { ServiceLaboratoireService } from '../service-laboratoire.service';
+import { ServiceLaboratoireService } from '../service_labo/service-laboratoire.service';
 
 @Component({
   selector: 'app-laboratoire-list',
@@ -29,4 +29,19 @@ export class LaboratoireListComponent implements OnInit {
       }
     });
   }
+
+  // Méthode pour modifier un laboratoire
+  modifier(laboratoire: Laboratoire): void {
+    // Logique pour modifier le laboratoire (par exemple, ouvrir un formulaire de modification)
+    console.log('Modifier', laboratoire);
+    // Vous pouvez ajouter votre logique ici pour naviguer vers un formulaire ou afficher un modal
+  }
+
+  // Méthode pour supprimer un laboratoire
+  supprimer(laboratoire: Laboratoire): void {
+    // Logique pour supprimer le laboratoire
+    console.log('Supprimer', laboratoire);
+    // Vous pouvez ajouter la logique pour appeler un service qui supprimera le laboratoire
+  }
+  
 }

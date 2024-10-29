@@ -1,8 +1,8 @@
 import { Component,OnInit } from '@angular/core';
-import { Laboratoire } from '../laboratoire';
+import { Laboratoire } from '../Entite_labo/laboratoire';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ServiceLaboratoireService } from '../service-laboratoire.service';
+import { ServiceLaboratoireService } from '../service_labo/service-laboratoire.service';
 import { error } from 'console';
 import { Router } from '@angular/router';
 
